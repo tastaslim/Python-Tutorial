@@ -1,6 +1,7 @@
 """
 Binary to other bases and vice versa.
 """
+
 num = int(input("Enter number: "))
 binaryNum = bin(num)
 print(bin(num))  # Gives binary of number
@@ -15,3 +16,7 @@ print(hex(num))  # Gives hexadecimal of number
  print(int("0x101", 16))
 """
 print(int(binaryNum, 2))
+
+"""
+In Python None is there which is similar to null in CPP and JS.
+"""
