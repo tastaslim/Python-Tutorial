@@ -142,6 +142,6 @@ def print_node(root):
     print(root.data)
     print_node(root.next)
 
-
-head1 = take_input()
-print_node(head1)
+#
+# head1 = take_input()
+# print_node(head1)

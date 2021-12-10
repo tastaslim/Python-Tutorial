@@ -34,28 +34,28 @@ class BinaryTree:
 #         newNode = BinaryTree(value)
 
 
-def printTree(root):
-    if not root:
+def print_tree(head):
+    if not head:
         return
-    print(root.data, end=" ")
-    printTree(root.left)
-    printTree(root.right)
+    print(head.data, end=" ")
+    print_tree(head.left)
+    print_tree(head.right)
 
 
-def findNode(root, value):
-    if not root:
-        return root
-    if root.data == value:
-        return root
-    findNode(root.left, value)
-    findNode(root.right, value)
+def find_node(head, value):
+    if not head:
+        return head
+    if head.data == value:
+        return head
+    find_node(head.left, value)
+    find_node(head.right, value)
 
 
-def levelWise(root):
-    if not root:
+def level_wise(head):
+    if not head:
         return
     q1 = Queue()
-    q1.push(root)
+    q1.push(head)
     while q1:
         front1 = q1.front()
         q1.pop()
@@ -76,4 +76,4 @@ root.left, root.right = l1, r1
 l1.left, l1.right = l2, None
 r1.left, r1.right = None, r2
 r2.left, r2.right = None, None
-levelWise(root)
+# levelWise(root)
