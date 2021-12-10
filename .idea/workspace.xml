@@ -3,30 +3,7 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day8/MRO.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day8/Method resolution order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day8/practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/filter_methode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/functionProgramming.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/lambda.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/map_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/reduce_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/zip_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedlist/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagination/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagination/module_check/class1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagination/module_check/class2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pagination/practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fileColors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/linkedlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist/linkedlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack/practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
