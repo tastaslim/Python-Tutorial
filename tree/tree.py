@@ -19,6 +19,8 @@
 #         if self.rearIndex == -1:
 #             return True
 #         return False
+from collections import defaultdict
+
 from queue.myQueue import Queue
 
 
@@ -27,7 +29,7 @@ class BinaryTree:
         self.data, self.left, self.right = data, left, right
 
 
-# def takeInput():
+# def take_input():
 #     value = int(input("Enter data: "))
 #     root = None
 #     while value != -1:
@@ -66,6 +68,19 @@ def level_wise(head):
             q1.push(front1.right)
 
 
+mp = defaultdict(list)
+
+
+# myIndex[someId].append(someVal)
+
+def action(head, distance):
+    if not head:
+        return
+    mp[distance].append(head.data)
+    action(head.left, distance + 1)
+    action(head.right, distance + 1)
+
+
 root = BinaryTree(1)
 l1 = BinaryTree(2)
 r1 = BinaryTree(3)
@@ -77,3 +92,6 @@ l1.left, l1.right = l2, None
 r1.left, r1.right = None, r2
 r2.left, r2.right = None, None
 # levelWise(root)
+
+action(root, 0)
+print(mp)
