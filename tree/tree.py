@@ -81,17 +81,93 @@ def action(head, distance):
     action(head.right, distance + 1)
 
 
+def vertical_order_traversal_helper(head: BinaryTree, distance: int, mp1) -> None:
+    if not head:
+        return
+    mp1.setdefault(distance, []).append(head.data)
+    left_view_helper(head.left, distance - 1, mp1)
+    left_view_helper(head.right, distance + 1, mp1)
+
+
+def vertical_order_traversal(head: BinaryTree) -> None:
+    temp_map = {}
+    vertical_order_traversal_helper(head, 0, temp_map)
+    for key in sorted(temp_map.keys()):
+        print(
+            temp_map.get(key))  # print(temp_map[key]) does the job, but it is not recommended. Better to use .get(key)
+
+
+"""
+Left view of Binary tree
+"""
+
+
+def left_view_helper(head: BinaryTree, distance: int, mp1) -> None:
+    if not head:
+        return
+    mp1.setdefault(distance, []).append(head.data)
+    left_view_helper(head.left, distance + 1, mp1)
+    left_view_helper(head.right, distance + 1, mp1)
+
+
+def left_view(head: BinaryTree) -> None:
+    temp_map = {}
+    left_view_helper(head, 0, temp_map)
+    for key in sorted(temp_map.keys()):
+        print(temp_map.get(key)[
+                  0])  # print(temp_map[key]) does the job but it is not recommended. Better to use .get(key)
+
+
+"""
+ Right view 
+"""
+
+
+def right_view_helper(head: BinaryTree, distance: int, mp1) -> None:
+    if not head:
+        return
+    mp1.setdefault(distance, []).append(head.data)
+    right_view_helper(head.left, distance + 1, mp1)
+    right_view_helper(head.right, distance + 1, mp1)
+
+
+def right_view(head: BinaryTree) -> None:
+    temp_map = {}
+    left_view_helper(head, 0, temp_map)
+    for key in sorted(temp_map.keys()):
+        lst = temp_map.get(key)
+        print(lst[len(lst) - 1])
+        # print(temp_map.get(key)[
+        #           len(temp_map.get(
+        #               key) - 1)])
+
+
 root = BinaryTree(1)
 l1 = BinaryTree(2)
 r1 = BinaryTree(3)
 l2 = BinaryTree(4)
 r2 = BinaryTree(5)
+l3 = BinaryTree(6)
+r3 = BinaryTree(7)
 
 root.left, root.right = l1, r1
 l1.left, l1.right = l2, None
-r1.left, r1.right = None, r2
-r2.left, r2.right = None, None
+r1.left, r1.right = l3, r2
+r2.left, r2.right = r3, None
+
+"""
+            1
+          /    \
+         2      3 
+        /      /  \
+       4      6    5
+                  /  
+                 7  
+"""
+# vertical_order_traversal(root)
+# left_view(root)
+right_view(root)
 # levelWise(root)
 
-action(root, 0)
-print(mp)
+# action(root, 0)
+# print(mp)
