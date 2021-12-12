@@ -49,7 +49,8 @@ hello(greet)
 
 # Higher order functions #
 
-- A higher order function(HOF) is any function which either accepts a function as parameter or returns a function.
+- A higher order function(HOF) is any function which either accepts a function as parameter or returns a function or
+  both.
 
 ```python
 def higher_order_function(another_function):  # higher order function

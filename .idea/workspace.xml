@@ -3,15 +3,7 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day10/decorator.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day10/decorator_practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day10/decorator_working.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day10/more_on_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day10/practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day10/why_do_we_need_decorator.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day9/comprehension/exercise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day9/comprehension/comprehension.py" beforeDir="false" afterPath="$PROJECT_DIR$/day9/comprehension/comprehension.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day10/decorator.md" beforeDir="false" afterPath="$PROJECT_DIR$/day10/decorator.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
