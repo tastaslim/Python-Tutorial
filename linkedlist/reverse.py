@@ -1,8 +1,7 @@
+from linkedlist.linkedlist import take_input
 
-from linkedlist.linkedlist import takeInput
 
-
-def reverseList(head):
+def reverse_list(head):
     if not head:
         return head
     prev, current, nextNode = None, head, None
@@ -15,6 +14,6 @@ def reverseList(head):
     return head
 
 
-head = takeInput()
-head = reverseList(head)
+head = take_input()
+head = reverse_list(head)
 # printData(head)

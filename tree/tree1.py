@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from queue.myQueue import Queue
+from queue2.myDemoQueue import Queue1
 
 
 class BinaryTree:
@@ -35,7 +35,7 @@ def find_node(head, value):
 def level_wise(head):
     if not head:
         return
-    q1 = Queue()
+    q1 = Queue1()
     q1.push(head)
     while q1:
         front1 = q1.front()

@@ -1,4 +1,4 @@
-class Queue:
+class Queue1:
     arr, frontIndex, rearIndex = [], 0, -1
 
     def __init__(self) -> None:
