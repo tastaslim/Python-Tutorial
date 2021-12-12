@@ -1,24 +1,3 @@
-# class Queue:
-#     arr, frontIndex, rearIndex = [], 0, -1
-#
-#     def front(self):
-#         return self.arr[self.frontIndex].data
-#
-#     def push(self, data):
-#         node = BinaryTree(data)
-#         self.arr.append(node)
-#         self.rearIndex += 1
-#
-#     def pop(self) -> None:
-#         if self.frontIndex > self.rearIndex:
-#             print("Underflow")
-#             return
-#         self.frontIndex += 1
-#
-#     def empty(self) -> bool:
-#         if self.rearIndex == -1:
-#             return True
-#         return False
 from collections import defaultdict
 
 from queue.myQueue import Queue
@@ -115,7 +94,7 @@ def left_view(head: BinaryTree) -> None:
     left_view_helper(head, 0, temp_map)
     for key in sorted(temp_map.keys()):
         print(temp_map.get(key)[
-                  0])  # print(temp_map[key]) does the job but it is not recommended. Better to use .get(key)
+                  0])  # print(temp_map[key]) does the job, but it is not recommended. Better to use .get(key)
 
 
 """
@@ -123,7 +102,7 @@ def left_view(head: BinaryTree) -> None:
 """
 
 
-def right_view_helper(head: BinaryTree, distance: int, mp1) -> None:
+def right_view_helper(head: BinaryTree, distance: int, mp1: dict) -> None:
     if not head:
         return
     mp1.setdefault(distance, []).append(head.data)
@@ -142,6 +121,80 @@ def right_view(head: BinaryTree) -> None:
         #               key) - 1)])
 
 
+"""s
+LCA
+"""
+
+
+def lca(head: BinaryTree, node1: int, node2: int) -> BinaryTree:
+    if not head:
+        return head
+    if head.data == node1 or head.data == node2:
+        return head
+    left_part = lca(head.left, node1, node2)
+    right_part = lca(head.right, node1, node2)
+    if left_part and right_part:
+        return head
+    if left_part:
+        return left_part
+    if right_part:
+        return right_part
+
+
+def lca1(head: BinaryTree, mp1: dict, prev) -> None:
+    if not head:
+        return
+    mp1[head.data] = prev.data
+    prev = head
+    lca1(head.left, mp1, prev)
+    lca1(head.right, mp1, prev)
+
+
+def root_node_path(head: BinaryTree, node: int):
+    prev = BinaryTree(-1)
+    mp1 = {}
+    lca1(head, mp1, prev)
+    temp = mp1[node]
+    print(node, end=" ")
+    while temp != -1:
+        print(temp, end=" ")
+        temp = mp1[temp]
+
+
+def search_node(arr: list, node: int) -> int:
+    index = 0
+    for element in arr:
+        if element == node:
+            return index
+        index += 1
+    return -1
+
+
+def distance_between_two_nodes(head: BinaryTree, node1: int, node2: int):
+    prev = BinaryTree(-1)
+    mp1 = {}
+    lca1(head, mp1, prev)
+    lca_node = lca(head, node1, node2)
+    lst1, lst2 = [], []
+    temp = mp1[node1]
+    lst1.append(node1)
+    while temp != -1:
+        lst1.append(temp)
+        temp = mp1[temp]
+
+    temp = mp1[node2]
+    lst2.append(node2)
+    while temp != -1:
+        lst2.append(temp)
+        temp = mp1[temp]
+    print(lst1)
+    print(lst2)
+    data = lca_node.data
+    index1 = search_node(lst1, data)
+    index2 = search_node(lst2, data)
+    return index1 - lst1.index(node1) + index2 - lst2.index(node2)
+
+
 root = BinaryTree(1)
 l1 = BinaryTree(2)
 r1 = BinaryTree(3)
@@ -154,7 +207,13 @@ root.left, root.right = l1, r1
 l1.left, l1.right = l2, None
 r1.left, r1.right = l3, r2
 r2.left, r2.right = r3, None
+# ans: BinaryTree = lca(root, 3, 1)
+# print(ans.data)
+# root_node_path(root, 7)
+# print()
+# root_node_path(root, 6)
 
+# print(distance_between_two_nodes(root, 4, 6))
 """
             1
           /    \
@@ -166,7 +225,7 @@ r2.left, r2.right = r3, None
 """
 # vertical_order_traversal(root)
 # left_view(root)
-right_view(root)
+# right_view(root)
 # levelWise(root)
 
 # action(root, 0)

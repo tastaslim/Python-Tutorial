@@ -3,10 +3,7 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day5/pass_by_object_reference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/set_default.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/day2/map.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tree/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
