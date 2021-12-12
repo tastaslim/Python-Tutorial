@@ -3,8 +3,15 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/day10/decorator.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day10/decorator_practice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day10/decorator_working.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day10/more_on_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day10/practice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day10/why_do_we_need_decorator.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day9/comprehension/exercise.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day9/comprehension/comprehension.py" beforeDir="false" afterPath="$PROJECT_DIR$/day9/comprehension/comprehension.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowGit.ShowToolbar" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="C++&#10;Python" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.25138888" />
   </component>
   <component name="RecentsManager">
@@ -56,7 +63,7 @@
       <recent name="$PROJECT_DIR$/pagination" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tree">
+  <component name="RunManager" selected="Python.practice">
     <configuration name="Python 3.8" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dequeue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="comprehension" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +93,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/queue" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9/comprehension" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/queue/dequeue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day9/comprehension/comprehension.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="decorator_practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,11 +114,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day2/map.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day10/decorator_practice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pass_by_object_reference" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="exercise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +135,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9/comprehension" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day5/pass_by_object_reference.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day9/comprehension/exercise.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +148,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="set_default" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="more_on_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,11 +156,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree/set_default.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day10/more_on_functions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,7 +169,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,11 +177,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree/tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day10/practice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tree" />
-        <item itemvalue="Python.set_default" />
-        <item itemvalue="Python.map" />
-        <item itemvalue="Python.pass_by_object_reference" />
-        <item itemvalue="Python.dequeue" />
+        <item itemvalue="Python.practice" />
+        <item itemvalue="Python.decorator_practice" />
+        <item itemvalue="Python.more_on_functions" />
+        <item itemvalue="Python.exercise" />
+        <item itemvalue="Python.comprehension" />
       </list>
     </recent_temporary>
   </component>

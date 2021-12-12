@@ -18,5 +18,50 @@ Find square root of elements in list
 
 # ---- SET comprehension ----------------------
 
-ans4 = {x for x in input().strip().split(" ")}  # basically an unordered set
-print(ans4)
+# ans4 = {x for x in input().strip().split(" ")}  # basically an unordered set
+# print(ans4)
+
+# ---- Dictionary -----
+dictionary = {"John": 1, "Wick": 2, "Jason": 3, "Stephen": 4}
+ans = {key: value for key, value in dictionary.items() if value > 2}
+# print(type(ans), ans)
+
+"""
+Given a list of players, find all players who have score more than 50 goals in Champions League and do not 
+represent European nations.
+"""
+
+players = [
+    {
+        "name": "Lionel Messi",
+        "country": "Argentina",
+        "continent": "America",
+        "goals": 100
+    },
+    {
+        "name": "Thomas Muller",
+        "country": "Germany",
+        "continent": "Europe",
+        "goals": 51
+    },
+    {
+        "name": "Luis Suarez",
+        "country": "Uruguay",
+        "continent": "America",
+        "goals": 60
+    },
+    {
+        "name": "Christiano Ronaldo",
+        "country": "Portugal",
+        "continent": "Europe",
+        "goals": 120
+    },
+    {
+        "name": "Paulo Dybala",
+        "country": "Argentina",
+        "continent": "America",
+        "goals": 20
+    }
+]
+non_european_players = [player for player in players if player["continent"] != "Europe" and player["goals"] >= 50]
+print(non_european_players)
