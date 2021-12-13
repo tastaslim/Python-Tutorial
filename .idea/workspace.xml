@@ -3,21 +3,11 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day11_error_handling/error_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11_error_handling/exercise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day12_debugging/debug_code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day12_debugging/debugging_in_python.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day12_debugging/pdb_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12_debugging/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12_debugging/testing/child_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12_debugging/testing/practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/reverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist/reverse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queue/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11_error_handling/error_and_handling.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queue/dequeue.py" beforeDir="false" afterPath="$PROJECT_DIR$/queue2/dequeue12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queue/myQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/queue2/myDemoQueue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queue/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stack/stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/stack/stack1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/set_default.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/set_default1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/tree1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day12_debugging/debug_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/day12_debugging/debug_code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,5 +217,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/day12_debugging/debug_code.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/day12_debugging/testing/child_test.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

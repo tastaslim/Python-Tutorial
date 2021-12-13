@@ -1,3 +1,6 @@
+from day12_debugging.testing.child_test import ChildTest
+
+
 def guess_number(x):
     no_of_attempts = int(input("Enter maximum guess limit: "))
     a = int(input())
@@ -18,4 +21,7 @@ def main():
     guess_number(num)
 
 
-main()
+# main()
+
+test = ChildTest("John", 28)
+test.print_test()
