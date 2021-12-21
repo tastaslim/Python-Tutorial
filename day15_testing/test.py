@@ -6,8 +6,9 @@ from src import main
 class TestMain(unittest.TestCase):
     def test_main_success(self):
         self.assertEqual(main.do_stuff(2), 6)
-        self.assertEqual(main.do_stuff(int('a')), 9)
+        self.assertNotEqual(main.do_stuff(8), 9)
         self.assertEqual(main.do_stuff(9.5), 13.5)
+        self.assertRaises(TypeError, main.do_stuff, 'a')
 
     # def test_main_failure(self):
     #     num1 = 10
