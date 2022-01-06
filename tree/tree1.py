@@ -1,7 +1,5 @@
 from collections import defaultdict
 
-from queue2.myDemoQueue import Queue1
-
 
 class BinaryTree:
     def __init__(self, data, left=None, right=None) -> None:
@@ -32,25 +30,46 @@ def find_node(head, value):
     find_node(head.right, value)
 
 
-def level_wise(head):
+# def level_wise(head):
+#     if not head:
+#         return
+#     q1 = Queue1()
+#     q1.push(head)
+#     while q1:
+#         front1 = q1.front()
+#         q1.pop()
+#         print(front1.data)
+#         if front1.left:
+#             q1.push(front1.left)
+#         if front1.right:
+#             q1.push(front1.right)
+#
+#
+
+def level_wise_traversal(head: BinaryTree) -> None:
     if not head:
         return
-    q1 = Queue1()
-    q1.push(head)
-    while q1:
-        front1 = q1.front()
-        q1.pop()
-        print(front1.data)
-        if front1.left:
-            q1.push(front1.left)
-        if front1.right:
-            q1.push(front1.right)
+    queue = [head]
+    while len(queue) > 0:
+        front = queue[0]
+        queue.pop(0)
+        print(front.data)
+        if front.left:
+            queue.append(front.left)
+        if front.right:
+            queue.append(front.right)
+
+
+def iterative_preorder_traversal(head: BinaryTree) -> None:
+    if not head:
+        return
+    stack = [head]
+    while len(stack) > 0:
+        pass
 
 
 mp = defaultdict(list)
 
-
-# myIndex[someId].append(someVal)
 
 def action(head, distance):
     if not head:
@@ -217,11 +236,12 @@ r2.left, r2.right = r3, None
 """
             1
           /    \
-         2      3 
-        /      /  \
-       4      6    5
-                  /  
-                 7  
+         2        3 
+        /  \     /  \ 
+       4   91   6    5
+                    /  
+                   7  
+      1 2 4 91 3 6 5 7
 """
 # vertical_order_traversal(root)
 # left_view(root)
@@ -230,3 +250,4 @@ r2.left, r2.right = r3, None
 
 # action(root, 0)
 # print(mp)
+level_wise_traversal(root)
