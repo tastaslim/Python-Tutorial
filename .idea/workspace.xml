@@ -3,13 +3,8 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Practice_Job/LinkedList/linkedList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day13_generators/doc.md" beforeDir="false" afterPath="$PROJECT_DIR$/day13_generators/doc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day15_testing/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/day15_testing/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/linkedlist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/reverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist/reverse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/tree1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/tree1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice_Job/LinkedList/linkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practice_Job/LinkedList/linkedList.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,6 +230,8 @@
       <workItem from="1641298551161" duration="2163000" />
       <workItem from="1641398039894" duration="599000" />
       <workItem from="1641404739420" duration="9898000" />
+      <workItem from="1641462364371" duration="680000" />
+      <workItem from="1641484689228" duration="8779000" />
     </task>
     <servers />
   </component>
@@ -256,6 +253,6 @@
     <SUITE FILE_PATH="coverage/Python$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1641138263574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedlist" />
     <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1640975742480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day15_testing" />
     <SUITE FILE_PATH="coverage/Python$tree1.coverage" NAME="tree1 Coverage Results" MODIFIED="1641142505951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
-    <SUITE FILE_PATH="coverage/Python$linkedList.coverage" NAME="linkedList Coverage Results" MODIFIED="1641457937206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice_Job/LinkedList" />
+    <SUITE FILE_PATH="coverage/Python$linkedList.coverage" NAME="linkedList Coverage Results" MODIFIED="1641495081576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice_Job/LinkedList" />
   </component>
 </project>

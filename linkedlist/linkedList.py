@@ -515,26 +515,117 @@ def rearrange_list(head: LinkedList) -> LinkedList:
 def reverse_k_nodes(head: LinkedList, k: int) -> LinkedList:
     if not head:
         return head
-    count = 0
-    temp = head
+    prev, temp = None, head
+    m = False
     while temp:
         h1 = None
         x = temp
+        count = 0
         while count < k - 1 and temp:
             count += 1
             temp = temp.next_node
         if temp:
             h1 = temp.next_node
             temp.next_node = None
-        temp = reverse_list(temp)
+        temp = reverse_list(x)
+        if not m:
+            head = temp
+            m = True
+        else:
+            prev.next_node = temp
+        prev = x
+        x.next_node = h1
+        temp = h1
+    return head
 
 
-root = take_input()
-print_node(root)
-root = reverse_k_nodes(root, 4)
+# https://leetcode.com/problems/reverse-nodes-in-even-length-groups/
+def reverse_even_group(head: LinkedList) -> LinkedList:
+    if not head:
+        return head
+    prev, temp = head.next_node, head
+    count = 1
+    while temp:
+        count1, h1, x = 0, None, temp
+        while temp and count1 < count - 1:
+            count1 += 1
+            temp = temp.next_node
+        if count % 2 == 0:
+            if temp is not None:
+                h1 = temp.next_node
+                temp.next_node = None
+            temp = reverse_list(x)
+            prev.next_node = temp
+            prev = x
+            x.next_node = h1
+            temp = h1
+        else:
+            if count1 % 2 == 0 and temp is None:
+                temp = reverse_list(x)
+                prev.next_node = temp
+                return head
+            prev = temp
+            if temp:
+                temp = temp.next_node
+        count += 1
+    return head
+
+
+def rotate_list(head: LinkedList, k: int) -> LinkedList:
+    list_len = length_list(head)
+    if list_len == 0:
+        return head
+    k = k % list_len
+    if not head or not head.next_node or k == 0:
+        return head
+
+    count = list_len - k
+    temp = head
+    while temp and count > 1:
+        temp = temp.next_node
+        count -= 1
+    h1 = temp.next_node
+    temp.next_node = None
+    y1 = h1
+    while y1.next_node:
+        y1 = y1.next_node
+    y1.next_node = head
+    head = h1
+    return head
+
+
+def partition(head: LinkedList, x: int) -> LinkedList:
+    if not head:
+        return head
+    arr1 = []
+    arr2 = []
+    temp = head
+    while temp:
+        if x > temp.data:
+            arr1.append(temp.data)
+        else:
+            arr2.append(temp.data)
+        temp = temp.next_node
+
+    i, j = 0, 0
+    temp = head
+    while i < len(arr1):
+        temp.data = arr1[i]
+        temp = temp.next_node
+        i += 1
+    while j < len(arr2):
+        temp.data = arr2[j]
+        temp = temp.next_node
+        j += 1
+    return head
+
+# [1,1,0,6]
+# root = take_input()
+# print_node(root)
+# root = partition(root, 2)
 # root = reverse_list_part(root, 3, 8)
-print()
-print_node(root)
+# print()
+# print_node(root)
 # ans = rearrange_list(root)
 # print()
 # print_node(ans)
