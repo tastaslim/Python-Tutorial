@@ -619,8 +619,26 @@ def partition(head: LinkedList, x: int) -> LinkedList:
         j += 1
     return head
 
+# def intersection_point(head1: LinkedList, head2: LinkedList) -> int:
+#     if not head1 or not head2:
+#         return -1
+#     count1, count2 = 0, 0
+#     temp1, temp2 = head1, head2
+#     while temp1:
+#         count1 += 1
+#         temp1 = temp1.next_node
+#     while temp2:
+#         count2 += 1
+#         temp2 = temp2.next_node
+#     temp1, temp2 = head1, head2
+#     count = count1 - count2
+
+
 # [1,1,0,6]
-# root = take_input()
+# root1 = take_input()
+# root2 = take_input()
+# ans: int = intersection_point(root1, root2)
+# print(ans)
 # print_node(root)
 # root = partition(root, 2)
 # root = reverse_list_part(root, 3, 8)

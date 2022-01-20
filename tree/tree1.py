@@ -12,7 +12,6 @@ class BinaryTree:
 #     while value != -1:
 #         newNode = BinaryTree(value)
 
-
 def print_tree(head):
     if not head:
         return
@@ -29,22 +28,6 @@ def find_node(head, value):
     find_node(head.left, value)
     find_node(head.right, value)
 
-
-# def level_wise(head):
-#     if not head:
-#         return
-#     q1 = Queue1()
-#     q1.push(head)
-#     while q1:
-#         front1 = q1.front()
-#         q1.pop()
-#         print(front1.data)
-#         if front1.left:
-#             q1.push(front1.left)
-#         if front1.right:
-#             q1.push(front1.right)
-#
-#
 
 def level_wise_traversal(head: BinaryTree) -> None:
     if not head:
@@ -214,6 +197,21 @@ def distance_between_two_nodes(head: BinaryTree, node1: int, node2: int):
     return index1 - lst1.index(node1) + index2 - lst2.index(node2)
 
 
+# def iterative_inorder_traversal(head: BinaryTree) -> None:
+#     if not head:
+#         return
+#     arr = [head]
+#     while len(arr) != 0:
+#         top = arr[0]
+#         if not top.left:
+#             arr.pop(0)
+#             print(top.data, end=" ")
+#         if top.right:
+#             arr.insert(top.right, 0)
+#         if top.left:
+#             arr.insert(top.left, 0)
+
+
 root = BinaryTree(1)
 l1 = BinaryTree(2)
 r1 = BinaryTree(3)
@@ -250,4 +248,4 @@ r2.left, r2.right = r3, None
 
 # action(root, 0)
 # print(mp)
-level_wise_traversal(root)
+# level_wise_traversal(root)
