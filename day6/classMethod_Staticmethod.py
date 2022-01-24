@@ -1,12 +1,12 @@
-import datetime
 data = """
-We can call class method and static method using both class and object. But note that these are properties of class not object. 
-class method can change state of class because it refers to blueprint/class while static method can't change state of class.
+We can call class method and static method using both class and object. But note that these are properties of class not 
+object. class method can change state of class because it refers to blueprint/class while static method can't change 
+state of class.
 
 1. Like self is used to refer to the current object. We use cls to refer to the class. With all class methods
 it is must to pass cls as first argument.
 
-cls in nothing but class, but since we have class keyword as revsered for another task, we use cls.
+cls in nothing but class, but since we have class keyword as reserved for another task, we use cls.
 Sometimes people use this class method as an alternative to the constructor.
 
 One thing to note is, in class method we use cls at least 1 time and in normal methods we use self at least 1 time. 
@@ -38,8 +38,8 @@ Hence if you have a use case where u are not using self and cls, probably it is 
 # print(employee1.fullname())
 # print(employee1.is_workday(datetime.date(2020, 1, 1)))
 
-# Lets take an use case where you pass employee as "Taslim-Arif-22" ==> First name, Last name, Age. Now what I want is I just need to pass this information to
-# any method of class and it shows information as First name Last name Age.
+# Let's take a use-case where you pass employee as "Taslim-Arif-22" ==> First name, Last name, Age. Now what I want is
+# I just need to pass this information to any method of class, and it shows information as First name Last name Age.
 
 """
 All in all, we can do same thing using other ways, prefer whatever you like. But generally, we won't see
@@ -47,11 +47,12 @@ people using class methods or static methods.
 """
 
 
-class Employee():
+class Employee:
     def __init__(self, first, last, age):
         self.first = first
         self.last = last
         self.age = age
+
     # if we don't have this class method, then user needs to first parse the string and then pass information while creating object
     # but now we have given them this flexibility to jsu pass string, we will parse it on our side and return relevant information.
 
