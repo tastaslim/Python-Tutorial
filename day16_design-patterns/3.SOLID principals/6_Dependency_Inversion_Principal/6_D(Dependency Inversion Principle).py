@@ -28,3 +28,29 @@ your program mean that a single change can affect many parts.
 If you minimize dependencies, changes will be more localized and require less work to find all affected components.
 
 """
+"""
+Let's say we have a website and we purchase few things from there which are stored in store menu card and it redirects
+you to payments.
+Store ----- Stripe API // This is bad because now our store is directly related to Stripe API calls. What if in future,
+you would like to change payment method to Paypal or PhonePe, you have to do tons of changes everywhere in the code of 
+store logic as store is directly dependent on Stripe. This could be very hectic as  we have to replace every stripe call
+with paypal in store logic (because Store and Stripe are tightly coupled) and it violates Open Closed principal too.
+"""
+
+# ----- Solution------
+
+"""
+Instead of Store being directly attached to Stripe API, we should put a Payment processor abstraction in between them,
+which will have functionalities related to payments. It will only contain function declarations not concrete 
+implementation. Any concrete implementation will implement all of its functionalities.
+In this way if in future, we want to replace Stripe with Paypal, we just need to pin point Payment processor to paypal.
+
+                                                        Paypal
+                                                       /
+                                                      /
+    Store  ----------- PaymentProcessor(Abstraction) ------------ PhonePe
+                                                      \
+                                                       \
+                                                        Stripe
+
+"""

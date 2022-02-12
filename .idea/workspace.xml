@@ -3,27 +3,11 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/2_Single_Responsibility_Principal/2_S(Single_Responsibilty_Principal).ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/3_Open_Closed_Principal/OCP-follow.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/3_Open_Closed_Principal/OCP-violation.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/3_Open_Closed_Principal/part2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal/part1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal/part2-follow-LSP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal/part2-violation-LSP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/5_Interface_segregation_principal/part1-violation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/5_Interface_segregation_principal/part2-follow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal/6_D(Dependency Inversion Principle).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/2_Single_Responsibility_Principal/part1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal/part-1.violation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal/part-2.follow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/3. Design Patterns/1. Introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/day16_design-patterns/4. Design Patterns/1. Introduction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/3. Design Patterns/2. Scenario.md" beforeDir="false" afterPath="$PROJECT_DIR$/day16_design-patterns/4. Design Patterns/2. Scenario.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/SOLID principals/10_S(Single_Responsibilty_Principal).ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/SOLID principals/11_Open_Closed_Principal/11a_O(Open_Closed_Principal).ts" beforeDir="false" afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/3_Open_Closed_Principal/part1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/SOLID principals/11_Open_Closed_Principal/11b_O_Implementation.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/SOLID principals/12_L(Liskov Substitution Principle).ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/SOLID principals/13_I(Interface segregation principle).ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/SOLID principals/14_D(Dependency Inversion Principle).ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_design-patterns/SOLID principals/9_SOLID_Principal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/1.Introduction.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day6/classMethod_Staticmethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/day6/classMethod_Staticmethod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal/6_D(Dependency Inversion Principle).py" beforeDir="false" afterPath="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal/6_D(Dependency Inversion Principle).py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +95,7 @@
       <recent name="$PROJECT_DIR$/day16_design-patterns/Design Patterns" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.part2-follow-LSP">
+  <component name="RunManager" selected="Python.part-2.follow">
     <configuration name="Python 3.8" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,6 +112,50 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="part-1.violation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal/part-1.violation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="part-2.follow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal/part-2.follow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -200,57 +228,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reverse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linkedlist" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linkedlist/reverse.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tree1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree/tree1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.part-2.follow" />
+        <item itemvalue="Python.part-1.violation" />
         <item itemvalue="Python.part2-follow-LSP" />
         <item itemvalue="Python.part2-violation-LSP" />
         <item itemvalue="Python.part2" />
-        <item itemvalue="Python.tree1" />
-        <item itemvalue="Python.reverse" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +286,10 @@
       <workItem from="1642913867426" duration="6490000" />
       <workItem from="1642927520792" duration="7871000" />
       <workItem from="1642946082480" duration="10837000" />
-      <workItem from="1643010186023" duration="1961000" />
+      <workItem from="1643010186023" duration="2681000" />
+      <workItem from="1643301330736" duration="4270000" />
+      <workItem from="1643543943056" duration="3000" />
+      <workItem from="1644423775800" duration="135000" />
     </task>
     <servers />
   </component>
@@ -325,10 +312,12 @@
     <SUITE FILE_PATH="coverage/Python$part2.coverage" NAME="part2 Coverage Results" MODIFIED="1642951425273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/3_Open_Closed_Principal" />
     <SUITE FILE_PATH="coverage/Python$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1641138263574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedlist" />
     <SUITE FILE_PATH="coverage/Python$part2_follow_LSP.coverage" NAME="part2-follow-LSP Coverage Results" MODIFIED="1642954288379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal" />
+    <SUITE FILE_PATH="coverage/Python$part_2_follow.coverage" NAME="part-2.follow Coverage Results" MODIFIED="1643307539006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal" />
     <SUITE FILE_PATH="coverage/Python$generic_tree.coverage" NAME="generic_tree Coverage Results" MODIFIED="1641742205888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
     <SUITE FILE_PATH="coverage/Python$part2__1_.coverage" NAME="part2-violation-LSP Coverage Results" MODIFIED="1642953847924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal" />
     <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1640975742480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day15_testing" />
     <SUITE FILE_PATH="coverage/Python$tree1.coverage" NAME="tree1 Coverage Results" MODIFIED="1641142505951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
+    <SUITE FILE_PATH="coverage/Python$part_1_violation.coverage" NAME="part-1.violation Coverage Results" MODIFIED="1643307529874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal" />
     <SUITE FILE_PATH="coverage/Python$linkedList.coverage" NAME="linkedList Coverage Results" MODIFIED="1641495081576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice_Job/LinkedList" />
   </component>
 </project>
