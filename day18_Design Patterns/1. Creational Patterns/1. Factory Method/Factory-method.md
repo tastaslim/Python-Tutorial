@@ -1,0 +1,3 @@
+- As the name suggest, factory is used to refer a wholesale of similar type of products.
+- Like you have a food factory which is responsible for creating all types of food products.
+- The factory method pattern is used to create objects without exposing the creation logic to the client.
