@@ -29,7 +29,7 @@ def test():
 # test()
 
 """
-In the above code raise an error instead of printing it. Now find output of code
+In the above, code raise an error instead of printing it. Now find output of code
 """
 
 

@@ -116,8 +116,7 @@ def reverse_list(head: LinkedList):
     #     return head
     # temp = reverse_list(head.next_node)
     # temp1 = head.next_node
-    # temp1.next_node = head
-    # head.next_node = None
+    # temp1.next_node = head.next_node = None
     # head = temp
     # return head
     if not head:

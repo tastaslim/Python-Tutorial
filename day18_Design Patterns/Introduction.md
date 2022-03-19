@@ -9,3 +9,10 @@ solution in detail. That’s basically how a pattern gets discovered.
   solve your problem.
 - Design patterns are not straight forward and strict rules, these are tools which we use to solve a particular type of
   problem. Hence, the ones who are going to implement these must be aware of problems first which they are facing.
+
+---
+
+# Fundamental of Design Patterns #
+
+- Always separate out those things which keep on changing from those which doesn't so that any new change will have
+  no/minimum impact on other things.
