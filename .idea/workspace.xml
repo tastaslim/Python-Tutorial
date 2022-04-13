@@ -4,7 +4,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day19_System_Design/2. Storage/notes/introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/day19_System_Design/2. Storage/notes/introduction.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day19_System_Design/1.Horizontal_Vertical_Scaling.md" beforeDir="false" afterPath="$PROJECT_DIR$/day19_System_Design/1.Horizontal_Vertical_Scaling.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +314,7 @@
       <workItem from="1649495443273" duration="1456000" />
       <workItem from="1649521420214" duration="305000" />
       <workItem from="1649522628644" duration="4036000" />
-      <workItem from="1649819556771" duration="1342000" />
+      <workItem from="1649819556771" duration="2555000" />
     </task>
     <servers />
   </component>
