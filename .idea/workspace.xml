@@ -3,17 +3,18 @@
   <component name="BlackConnectSettings" triggerOnEachSave="true" triggerOnReformat="true" />
   <component name="ChangeListManager">
     <list default="true" id="f0a8359f-94fb-41a0-ba30-46ecf485b843" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day18_Design Patterns/3. Behavioural Patterns/1. Strategy Pattern/Info.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_Design Patterns/3. Behavioural Patterns/1. Strategy Pattern/implementation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/notes/day0.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19_System_Design/1.Horizontal_Vertical_Scaling.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19_System_Design/2. Load Balancing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19_System_Design/2. Storage/image/image.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19_System_Design/2. Storage/notes/introduction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19_System_Design/2. Storage/practice/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19_System_Design/3. Latency and throughput/notes/Latency.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19_System_Design/3. Latency and throughput/notes/Throughput.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day21_Salesforce_SOAP_API/authentication.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day9/encryptiondecryption.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day11_error_handling/exercise.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11_error_handling/exercise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day18_Design Patterns/Introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/day18_Design Patterns/Introduction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/linkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/linkedlist/linkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/generic_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/generic_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/practice/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +83,8 @@
     <property name="ToolWindowGit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="C++&#10;Python" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.13.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.26" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -95,14 +98,14 @@
       <recent name="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day19_System_Design/2. Storage/notes" />
+      <recent name="$PROJECT_DIR$/day19_System_Design/2. Storage/image" />
       <recent name="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/notes" />
       <recent name="$PROJECT_DIR$/day19_System_Design/1. Internet Basics/images" />
       <recent name="$PROJECT_DIR$/day19_System_Design/1. Internet Basics" />
-      <recent name="$PROJECT_DIR$/day19_System_Design/image" />
-      <recent name="$PROJECT_DIR$/day18_Design Patterns/1. Creational Patterns/1. Factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.generic_tree">
+  <component name="RunManager" selected="Python.encryptiondecryption">
     <configuration name="Python 3.8" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generic_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="encryptiondecryption" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,12 +136,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree/generic_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day9/encryptiondecryption.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,7 +244,7 @@
         <item itemvalue="Python.part-2.follow" />
         <item itemvalue="Python.part-1.violation" />
         <item itemvalue="Python.implementation" />
-        <item itemvalue="Python.generic_tree" />
+        <item itemvalue="Python.encryptiondecryption" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +317,14 @@
       <workItem from="1647427694222" duration="9490000" />
       <workItem from="1647536593522" duration="990000" />
       <workItem from="1647603462886" duration="52000" />
-      <workItem from="1647658259016" duration="8003000" />
+      <workItem from="1647658259016" duration="24002000" />
+      <workItem from="1647967856813" duration="58000" />
+      <workItem from="1648285261366" duration="931000" />
+      <workItem from="1648888142543" duration="1504000" />
+      <workItem from="1649495443273" duration="1456000" />
+      <workItem from="1649521420214" duration="305000" />
+      <workItem from="1649522628644" duration="4036000" />
+      <workItem from="1649819556771" duration="39000" />
     </task>
     <servers />
   </component>
@@ -333,17 +343,18 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python$linkedList__1_.coverage" NAME="linkedList (1) Coverage Results" MODIFIED="1641651977936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedlist" />
     <SUITE FILE_PATH="coverage/Python$part2.coverage" NAME="part2 Coverage Results" MODIFIED="1642951425273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/3_Open_Closed_Principal" />
+    <SUITE FILE_PATH="coverage/Python$part2__1_.coverage" NAME="part2-violation-LSP Coverage Results" MODIFIED="1642953847924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal" />
+    <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1640975742480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day15_testing" />
+    <SUITE FILE_PATH="coverage/Python$implementation.coverage" NAME="implementation Coverage Results" MODIFIED="1644729921394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18_Design Patterns/1. Creational Patterns/1. Factory Method" />
+    <SUITE FILE_PATH="coverage/Python$linkedList.coverage" NAME="linkedList Coverage Results" MODIFIED="1641495081576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice_Job/LinkedList" />
+    <SUITE FILE_PATH="coverage/Python$linkedList__1_.coverage" NAME="linkedList (1) Coverage Results" MODIFIED="1641651977936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedlist" />
     <SUITE FILE_PATH="coverage/Python$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1641138263574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linkedlist" />
     <SUITE FILE_PATH="coverage/Python$part2_follow_LSP.coverage" NAME="part2-follow-LSP Coverage Results" MODIFIED="1642954288379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal" />
     <SUITE FILE_PATH="coverage/Python$part_2_follow.coverage" NAME="part-2.follow Coverage Results" MODIFIED="1643307539006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal" />
-    <SUITE FILE_PATH="coverage/Python$part2__1_.coverage" NAME="part2-violation-LSP Coverage Results" MODIFIED="1642953847924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/4_Liskov_Substitution_Principal" />
     <SUITE FILE_PATH="coverage/Python$generic_tree.coverage" NAME="generic_tree Coverage Results" MODIFIED="1647071723889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
-    <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1640975742480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day15_testing" />
     <SUITE FILE_PATH="coverage/Python$tree1.coverage" NAME="tree1 Coverage Results" MODIFIED="1641142505951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
     <SUITE FILE_PATH="coverage/Python$part_1_violation.coverage" NAME="part-1.violation Coverage Results" MODIFIED="1643307529874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16_design-patterns/3.SOLID principals/6_Dependency_Inversion_Principal" />
-    <SUITE FILE_PATH="coverage/Python$implementation.coverage" NAME="implementation Coverage Results" MODIFIED="1644729921394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18_Design Patterns/1. Creational Patterns/1. Factory Method" />
-    <SUITE FILE_PATH="coverage/Python$linkedList.coverage" NAME="linkedList Coverage Results" MODIFIED="1641495081576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice_Job/LinkedList" />
+    <SUITE FILE_PATH="coverage/Python$encryptiondecryption.coverage" NAME="encryptiondecryption Coverage Results" MODIFIED="1647881172502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day9" />
   </component>
 </project>

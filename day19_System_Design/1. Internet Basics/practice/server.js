@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5050;
+const port = process.env.PORT || 5050;
 app.use(express.json());
 app.listen(port, () => {
     console.log(`Server is listening on ${port}`)
@@ -24,6 +24,14 @@ app.post("/hello", (req, res) => {
             "age": 22,
             "address": "NPP"
         },
-        message: `Success fetched data for userId : ${req.body.id}`
+        message: `Successfully fetched data for userId : ${req.body.id}`
     });
 });
+
+// const _ = require("lodash");
+// const a = [1234, 5322, 1222, 4567, 8996, 3321, 2789]; // ('1234','5322','1222','4567','8996', '3321', '2789')
+// const x = `(${_.map(a, ele => `'${ele}'`).join(',')})`;
+// console.log(x);
+//
+// const z = `${_.map(a, ele => `s3o.${ele}`).join(',')}`
+// console.log(z)
