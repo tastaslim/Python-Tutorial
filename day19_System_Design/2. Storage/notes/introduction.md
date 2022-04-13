@@ -9,8 +9,8 @@
 2. **MEMORY :** In this case, once DB server is down, or we restart server, data will be gone (Consider it as key-value
    pair hash table.)
 
-Once question that you might ask is why do we ever need to use memory as once server is down/restarted data will be
-gone. Answer is simple,read and write operation in memory is way faster than disk. We want to make our system as
+One question that you might ask is, hey Taslim why do we ever need to use memory as once server is down/restarted data
+will be gone. Answer is simple,read and write operation in memory is way faster than disk. We want to make our system as
 efficient, fast as possible and at the same time persistent even though server goes down. That is where lots of
 techniques come into picture which we will discuss later in this series.
 
