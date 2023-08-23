@@ -6,7 +6,7 @@ object. class method can change state of class because it refers to blueprint/cl
 state of class.
 1. Like self is used to refer to the current object. We use cls to refer to the class. With all class methods
 it is must to pass cls as first argument.
-2. cls in nothing but class, but since we have class keyword as reserved for another task, we use cls.
+2. cls is nothing but class, but since we have class keyword as reserved for another task, we use cls.
 Sometimes people use this class method as an alternative to the constructor.
 
 One thing to note is, in class method we use cls at least 1 time and in normal methods we use self at least 1 time. 

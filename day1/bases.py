@@ -9,7 +9,7 @@ print(oct(num))  # Gives octal of number
 print(hex(num))  # Gives hexadecimal of number
 
 """
- Since we have base 2 in binary, we can use 2 as the base to convert binary to int. It is 
+ Since we have base 2 in binary, we can use 2 as the base to convert binary to int. It is
  similar for octal and hexadecimal.
  print(int("0b101", 2))
  print(int("0o101", 8))

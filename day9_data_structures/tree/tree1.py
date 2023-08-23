@@ -1,4 +1,5 @@
 from collections import defaultdict
+from queue import Queue
 
 
 class BinaryTree:
@@ -11,6 +12,25 @@ class BinaryTree:
 #     root = None
 #     while value != -1:
 #         newNode = BinaryTree(value)
+
+
+def sum_of_leaf_nodes(root: BinaryTree) -> int:
+    if not root:
+        return 0
+    q = Queue()
+    sum = 0
+    q.put(root)
+    while not q.empty():
+        front = q.get()
+        if not front.left and not front.right:
+            sum += front.data
+        if front.left:
+            q.put(front.left)
+        if front.right:
+            q.put(front.right)
+        
+    return sum
+
 
 def print_tree(head):
     if not head:
@@ -224,6 +244,9 @@ root.left, root.right = l1, r1
 l1.left, l1.right = l2, None
 r1.left, r1.right = l3, r2
 r2.left, r2.right = r3, None
+
+ans = sum_of_leaf_nodes(root)
+print(ans)
 # ans: BinaryTree = lca(root, 3, 1)
 # print(ans.data)
 # root_node_path(root, 7)

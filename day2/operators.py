@@ -95,7 +95,7 @@ number1 <<= number2
 print(number1)
 
 """
-and vs &  
+and vs &
 and ==> When any of the condition is false, it will return false and doesn't check the other condition.
 & ==> When any of the condition is false, it will return false but checks the other condition too.
 

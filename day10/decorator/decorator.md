@@ -65,7 +65,7 @@ def higher_order_function2():  # higher order function
 
 ---
 
-None question which might be striking in your mind, why are we learning functions here? It's because decorators gives
+One question which might be striking in your mind, why are we learning functions here? It's because decorators gives
 extra functionality to functions. Say We want our function to have a special functionality, we can add a decorators with
 it.
 
@@ -94,7 +94,7 @@ functionality to a function.
 
 - Well there are unlimited use of decorator. You want to make a function static , class level, want to check how much
   time a function takes to execute, how much memory it takes etc. We can have decorators for these.
-- At the end of the day, its upto you how do you like it to use. We have many built in decorators, and we can also
+- At the end of the day, it's up to you how do you like it to use. We have many built in decorators, and we can also
   create our own.
 
 ```python

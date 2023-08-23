@@ -53,7 +53,7 @@ class GrandChild(Child):
 
 
 """
-As usual hierarchy will go from child to parent. First it will search for function inside it's own blueprint, then 
+As usual hierarchy will go from child to parent. First it will search for function inside it's own blueprint, then
 parent blueprint and then grandparent blueprint and so on.
 """
 

@@ -1,43 +1,76 @@
-import base64
+# import base64
+#
+# from Crypto.Cipher import AES
+# from Crypto.Util.Padding import pad, unpad
+#
+# # AES ECB mode without IV
+#
+# data = '{userId: 405, organizationId : 642}'
+# key = 'seoifh802308fh34fh8w0839hr03g29^'  # Must Be 16 char for AES128
+#
+#
+# def encrypt(raw):
+#     raw = pad(raw.encode(), 16)
+#     cipher = AES.new(key.encode('utf-8'), AES.MODE_ECB)
+#     return base64.b64encode(cipher.encrypt(raw))
+#
+#
+# def decrypt(enc):
+#     enc = base64.b64decode(enc)
+#     cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC)
+#     return unpad(cipher.decrypt(enc), 16)
+#
+#
+# encrypted = encrypt(data)
+# print('encrypted ECB Base64:', encrypted.decode("utf-8", "ignore"))
+#
+# # decrypted = decrypt(encrypted)
+# # print('data: ', decrypted.decode("utf-8", "ignore"))
 
-from Crypto import Random
+from base64 import b64encode, b64decode
+
+# Import the required modules
 from Crypto.Cipher import AES
-from Crypto.Protocol.KDF import PBKDF2
-
-BLOCK_SIZE = 16
-pad = lambda s: s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * chr(BLOCK_SIZE - len(s) % BLOCK_SIZE)
-unpad = lambda s: s[:-ord(s[len(s) - 1:])]
-
-password = input("Enter encryption password: ")
+from Crypto.Random import get_random_bytes
+from Crypto.Util.Padding import pad, unpad
 
 
-def get_private_key(pwd):
-    salt = b"this is a salt"
-    kdf = PBKDF2(pwd, salt, 64, 1000)
-    key = kdf[:32]
-    return key
+# Define the encryption function
+def encrypt_AES_CBC_256(key, message):
+    key_bytes = key.encode('utf-8')
+    message_bytes = message.encode('utf-8')
+    iv = get_random_bytes(AES.block_size)
+    cipher = AES.new(key_bytes, AES.MODE_CBC)
+    padded_message = pad(message_bytes, AES.block_size)
+    ciphertext_bytes = cipher.encrypt(padded_message)
+    ciphertext = b64encode(iv + ciphertext_bytes).decode('utf-8')
+    return ciphertext
 
 
-def encrypt(raw, pwd):
-    private_key = get_private_key(pwd)
-    raw = pad(raw)
-    iv = Random.new().read(AES.block_size)
-    cipher = AES.new(private_key, AES.MODE_CBC, iv)
-    return base64.b64encode(iv + cipher.encrypt(raw))
+# Define the decryption function
+def decrypt_AES_CBC_256(key, ciphertext):
+    key_bytes = key.encode('utf-8')
+    ciphertext_bytes = b64decode(ciphertext)
+    iv = ciphertext_bytes[:AES.block_size]
+    cipher = AES.new(key_bytes, AES.MODE_CBC, iv)
+    ciphertext_bytes = ciphertext_bytes[AES.block_size:]
+    decrypted_bytes = cipher.decrypt(ciphertext_bytes)
+    plaintext_bytes = unpad(decrypted_bytes, AES.block_size)
+    plaintext = plaintext_bytes.decode('utf-8')
+    return plaintext
 
 
-def decrypt(enc, pwd):
-    private_key = get_private_key(pwd)
-    enc = base64.b64decode(enc)
-    iv = enc[:16]
-    cipher = AES.new(private_key, AES.MODE_CBC, iv)
-    return unpad(cipher.decrypt(enc[16:]))
+# Set the 256-bit key and plaintext message
+data = '{userId: 405, organizationId : 642}'
+key = 'seoifh802308fh34fh8w0839hr03g29^'  # Must Be 16 char for AES128
 
+# Encrypt the message
+encrypted_message = encrypt_AES_CBC_256(key, data)
 
-# First let us encrypt secret message
-encrypted = encrypt("This is a secret message", password)
-print(encrypted)
+# Decrypt the message
+decrypted_message = decrypt_AES_CBC_256(key, encrypted_message)
 
-# Let us decrypt using our original password
-decrypted = decrypt(encrypted, password)
-print(bytes.decode(decrypted))
+# Print the original and decrypted messages
+print('Original Message:', data)
+print('Encrypted Message:', encrypted_message)
+print('Decrypted Message:', decrypted_message)

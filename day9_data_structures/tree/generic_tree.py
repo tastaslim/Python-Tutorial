@@ -14,13 +14,12 @@ def take_input() -> GenericTree:
     return root
 
 
-def print_node(root: GenericTree, maxima) -> int:
+def print_node(root: GenericTree) -> None:
     if not root:
-        return -1
+        return
+    print(root.data)
     for i in range(0, len(root.children)):
-        maxima = max(maxima, root.children[i].data)
-        print_node(root.children[i], maxima)
-    return maxima
+        print_node(root.children[i])
 
 
 def find_max(root: GenericTree, maxima) -> int:
@@ -33,5 +32,4 @@ def find_max(root: GenericTree, maxima) -> int:
 
 
 head = take_input()
-ans = print_node(head, head.data)
-print(ans)
+print_node(head)

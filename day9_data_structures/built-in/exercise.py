@@ -2,6 +2,8 @@
 Given a list of integers and a number k, find the kth the largest integer in the list. The integer will be stored in the
 kth_max variable. For example, with a list of 7 integers, if k = 2, then kth_max will be equal to the second-largest integer
 in the list. If k = 6, kth_max will equal the 6th largest integer.
+
+Note: Array does not contain any duplicates
 """
 
 

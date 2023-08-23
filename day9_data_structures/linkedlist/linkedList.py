@@ -668,6 +668,38 @@ def intersection_point(head1: LinkedList, head2: LinkedList) -> int:
     else:
         pass
 
+
+def length_node_recursive(head: LinkedList) -> int:
+    if not head:
+        return 0
+    return 1 + length_node_recursive(head.next_node)
+
+
+def detect_loop_linkedlist(head: LinkedList) -> bool:
+    if not head:
+        return False
+    slow, fast = head, head.next_node
+    while fast and fast.next_node:
+        if slow == fast:
+            return True
+        slow = slow.next_node
+        fast = fast.next_node.next_node
+    return False
+
+
+def find_mid(head: LinkedList) -> int:
+    if not head:
+        return -1
+    slow, fast = head, head.next_node
+    while fast and fast.next_node:
+        slow = slow.next_node
+        fast = fast.next_node.next_node
+    return slow
+
+
+if __name__ == "__main__":
+    root1 = take_input()
+    print(length_node_recursive(root1))
 # [1,1,0,6]
 # root1 = take_input()
 # root2 = take_input()

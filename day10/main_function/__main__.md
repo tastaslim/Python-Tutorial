@@ -10,8 +10,8 @@ In Short:
   a Module. Let's understand it with the help of an example. You can remember it as C++ (int main() function), but in
   reality, in python this is not something special from where code execution starts, it is just a conditional check.
 - __name__ returns filename when it is imported in another file but if you execute same file where if __name__ == '_
-  _main__' is written it will return __main__ which is why inside file the conditional statement is true and hence piece
-  of code is executed but not in other files.
+  _main__' is written, it will return __main__ which is why inside file the conditional statement is true and hence
+  piece of code is executed but not in other files.
 - The below image is useful but confusing and don't think if __name_ == '__main__' is from where execution starts in
   python like int main() function in c++.
   ![Python](./namemain.webp)
@@ -28,9 +28,6 @@ print(test(1, 2))
 file2.py
 
 ```python
-import file1
-
-
 def test2(a: int, b: int) -> int:
     return a * b
 
@@ -58,9 +55,6 @@ if __name__ == '__main__':
 file2.py
 
 ```python
-import file1
-
-
 def test2(a: int, b: int) -> int:
     return a * b
 

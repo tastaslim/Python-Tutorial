@@ -1,7 +1,6 @@
-"""[@summary] is vs ==
-== checks for only value part.
-is checks for everything(value,location in memory is same, same data type ), hence it is always recommended to use is while working
-with difference types of data and comparison between them.
+"""[@summary] is vs == == checks for only value part. is checks for everything(value,location in memory is same,
+same data type ), hence it is always recommended to use is while working with difference types of data and comparison
+between them.
 
 If you know Javascript, you can consider is as ===
 """

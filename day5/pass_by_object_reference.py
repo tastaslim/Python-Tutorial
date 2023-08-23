@@ -8,15 +8,15 @@ For people of C++ or Java(Just for reference):
 """
 
 
-def process(a):  # You will see it in your ide(Pycharm etc. ) that it says parameter x is not used
-    # because passed value a is integer which is immutable.
-    a = 1222
-    print(a, id(a))
+def process(article):  # You will see it in your ide(Pycharm etc. ) that it says parameter x is not used
+    # because passed value article is integer which is immutable.
+    article = 1222
+    print(article, id(article))
 
 
 """
-In below case what will happen is, for variable a inside function, a new object is created in memory
-and new valur is assigned to it.
+In below case what will happen is, for variable article inside function, a new object is created in memory
+and new value is assigned to it.
 """
 #
 # a = 14

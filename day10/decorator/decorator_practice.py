@@ -18,8 +18,8 @@ def function(item: str):
 
 # function("Test")  # outputs
 """
-Hello 
-Test 
+Hello
+Test
 world
 """
 
