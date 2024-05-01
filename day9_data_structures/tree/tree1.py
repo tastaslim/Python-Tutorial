@@ -28,7 +28,7 @@ def sum_of_leaf_nodes(root: BinaryTree) -> int:
             q.put(front.left)
         if front.right:
             q.put(front.right)
-        
+
     return sum
 
 

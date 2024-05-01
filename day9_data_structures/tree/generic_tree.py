@@ -1,35 +1,58 @@
+from queue import Queue
+
+
 class GenericTree:
-    def __init__(self, data: int):
+    def __init__(self, data: int) -> None:
         self.data = data
         self.children = []
 
 
-def take_input() -> GenericTree:
-    root_data = int(input("Enter data: "))
-    root = GenericTree(root_data)
-    num_child = int(input(f"Enter number of children of node{root.data}: "))
-    for i in range(num_child):
-        child = take_input()
-        root.children.append(child)
+def takeInput() -> GenericTree:
+    value = int(input("Enter node data: "))
+    root = GenericTree(value)
+    numberOfChildren = int(input("Enter number of children: "))
+    for i in range(numberOfChildren):
+        children = takeInput()
+        root.children.append(children)
     return root
 
 
-def print_node(root: GenericTree) -> None:
+def takeInputLevelWise() -> GenericTree:
+    q = Queue()
+    value = int(input("Enter root data: "))
+    root = GenericTree(value)
+    q.put(root)
+    while not q.empty():
+        front = q.get()
+        numberOfChildren = int(input("Enter number of children: "))
+        for i in range(numberOfChildren):
+            value = int(input(f"Enter children{i} data: "))
+            child = GenericTree(value)
+            front.children.append(child)
+            q.put(child)
+    return root
+
+
+def printNodes(root: GenericTree, parentNode: GenericTree | None) -> None:
     if not root:
         return
-    print(root.data)
-    for i in range(0, len(root.children)):
-        print_node(root.children[i])
+    print(f"{root.data} : {parentNode.data if parentNode else None}")
+    for element in root.children:
+        printNodes(element, root)
 
 
-def find_max(root: GenericTree, maxima) -> int:
+def printNodesLevelWise(root: GenericTree) -> None:
     if not root:
-        return -1
-    for i in range(0, len(root.children)):
-        maxima = max(maxima, root.children[i].data)
-        find_max(root.children[i], maxima)
-    return maxima
+        return
+    q = Queue()
+    q.put(root)
+    while not q.empty():
+        front = q.get()
+        print(front.data)
+        for element in front.children:
+            q.put(element)
 
 
-head = take_input()
-print_node(head)
+if __name__ == "__main__":
+    head = takeInputLevelWise()
+    printNodesLevelWise(head)
