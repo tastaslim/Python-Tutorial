@@ -697,84 +697,9 @@ def find_mid(head: LinkedList) -> int:
     return slow
 
 
-def segregateEvenOdd(head: LinkedList) -> LinkedList:
-    if not head and not head.next_node:
-        return head
-
-    finalHead, finalTail = None, None
-    finalHeadOdd, finalTailOdd = None, None
-    temp = head
-    while temp:
-        if temp.data % 2 == 0:
-            if not finalHead:
-                finalHead = temp
-                finalTail = temp
-            else:
-                finalTail.next_node = temp
-                finalTail = finalTail.next_node
-        else:
-            if not finalHeadOdd:
-                finalHeadOdd = temp
-                finalTailOdd = temp
-            else:
-                finalTailOdd.next_node = temp
-                finalTailOdd = finalTailOdd.next_node
-        temp = temp.next_node
-
-    if finalHead and finalHeadOdd:
-        finalTailOdd.next_node = None
-        finalTail.next_node = finalHeadOdd
-        finalTailOdd.next_node = None
-        return finalHead
-
-    if not finalHead:
-        finalTailOdd.next_node = None
-        return finalHeadOdd
-
-    if not finalHeadOdd:
-        finalTail.next_node = None
-        return finalHead
-
-
-def findIntersection(firstHead, secondHead):
-    if not firstHead or not secondHead:
-        return None
-
-    h1 = firstHead
-    h2 = secondHead
-    while h1 and h2:
-        h1 = h1.next
-        h2 = h2.next
-
-    if h1:
-        h2 = secondHead
-        while h1:
-            h2 = h2.next
-            h1 = h1.next
-        h1 = firstHead
-        while h1 and h2:
-            if h1 == h2:
-                return h1
-            h1 = h1.next
-            h2 = h2.next
-    elif h2:
-        h1 = firstHead
-        while h2:
-            h2 = h2.next
-            h1 = h1.next
-        h2 = secondHead
-        while h1 and h2:
-            if h1 == h2:
-                return h1
-            h1 = h1.next
-            h2 = h2.next
-    return None
-
-
 if __name__ == "__main__":
     root1 = take_input()
-    print_node(segregateEvenOdd(root1))
-    # print(length_node_recursive(root1))
+    print(length_node_recursive(root1))
 # [1,1,0,6]
 # root1 = take_input()
 # root2 = take_input()

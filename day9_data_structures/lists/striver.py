@@ -215,29 +215,14 @@ def rotateMatrix(mat: list[list[int]]):
 def longestSuccessiveElements(arr: list[int]) -> int:
     if len(arr) == 1:
         return 1
-    # count, tempCount = 1, 1
-    # arr.sort()
-    # for i in range(1, len(arr)):
-    #     if arr[i] - arr[i - 1] == 1:
-    #         tempCount += 1
-    #     elif arr[i] != arr[i + 1]:
-    #         tempCount = 1
-    #     count = max(count, tempCount)
-    # return count
-
-    s = set()
-    for element in arr:
-        s.add(element)
-
-    count = 0
-    for val in s:
-        if val - 1 not in s:
+    count, tempCount = 0, 1
+    arr.sort()
+    for i in range(1, len(arr)):
+        if arr[i] - arr[i - 1] == 1:
+            tempCount += 1
+        elif arr[i] != arr[i + 1]:
             tempCount = 1
-            check = val + 1
-            while check in s:
-                tempCount += 1
-                check += 1
-            count = max(count, tempCount)
+        count = max(count, tempCount)
     return count
 
 
@@ -389,28 +374,15 @@ def nextGreaterPermutation(A: list[int]) -> list[int]:
     return A
 
 
-def takeInput():
-    n1 = int(input())
-    if n1 == 0:
-        return list(), n1
-    arr1 = list(map(int, input().strip().split(" ")))
-
-    return arr1, n1
-
-
-# main
-
 if __name__ == "__main__":
-    # arr, n = takeInput()
-    # print(nextGreaterPermutation([1, 3, 2]))
+    print(nextGreaterPermutation([1, 3, 2]))
     # print(alternateNumbers([1, 2, -3, -1, -2, -5]))
     # print(majorityElementSecond([4, 1, 3, 1, 3, 3, 1, 2, 3, 2, 4, 2, 1, 4, 4, 4, 4, 4]))
     # print(rotateMatrix([[10, 8, 7],
     #                     [2, 10, 5],
     #                     [6, 7, 6]]
     #                    ))
-    arr = list(map(int, input().strip().split(" ")))
-    print(longestSuccessiveElements(arr))
+    # print(longestSuccessiveElements(arr=list(map(int, input().strip().split(" ")))))
     # print(largest_element(arr))
     # print(second_largest_element([1, 1, 1]))
     # print(print_fibonacci(8))

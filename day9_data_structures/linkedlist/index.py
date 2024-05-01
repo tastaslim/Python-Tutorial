@@ -355,7 +355,7 @@ def return_nth_node_from_last(root: LinkedList, n: int) -> int:
 
     if not end_node:
         return -1
-
+    
     while end_node:
         end_node = end_node.next_element_address
         nth_node = nth_node.next_element_address
@@ -365,92 +365,8 @@ def return_nth_node_from_last(root: LinkedList, n: int) -> int:
     return -1
 
 
-def mergeTwoSortedLL(head1: LinkedList, head2: LinkedList) -> LinkedList:
-    if not head1:
-        return head2
-    if not head2:
-        return head1
-
-    temp1, temp2 = head1, head2
-    finalHead, finalTail = None, None
-    while temp1 and temp2:
-        if temp1.data > temp2.data:
-            if not finalHead:
-                finalHead = temp2
-                finalTail = temp2
-            else:
-                finalTail.child = temp2
-                finalTail = finalTail.child
-            temp2 = temp2.child
-        else:
-            if not finalHead:
-                finalHead = temp1
-                finalTail = temp1
-            else:
-                finalTail.child = temp1
-                finalTail = finalTail.child
-            temp1 = temp1.child
-
-    if not temp1:
-        finalTail.child = temp1
-    if not temp2:
-        finalTail.child = temp2
-    return finalHead
-
-
-def flattenLinkedList(head: LinkedList) -> LinkedList:
-    if not head or not head.next:
-        return head
-    rec = flattenLinkedList(head.next)
-    head.next = None
-    answer = mergeTwoSortedLL(head, rec)
-    return answer
-
-
-class Solution:
-    @staticmethod
-    def reverse(head: LinkedList) -> LinkedList:
-        if not head or not head.next_element_address:
-            return head
-        prev, curr, nextNode = None, head, None
-        while curr:
-            nextNode = curr.next_element_address
-            curr.next_element_address = prev
-            prev = curr
-            curr = nextNode
-        return prev
-
-    def reverseKGroup(self, head: LinkedList, k: int) -> LinkedList:
-        if not head or not head.next_element_address or k <= 1:
-            return head
-
-        finalHead, finalTail = None, None
-
-        prev, temp = None, head
-        while temp:
-            h1 = temp
-            h2 = temp
-            count = 0
-            while temp and count != k:
-                prev = temp
-                temp = temp.next_element_address
-                count += 1
-            if prev:
-                prev.next_element_address = None
-                if temp:
-                    h2 = self.reverse(h2)
-            if not finalHead:
-                finalHead = h2
-                finalTail = h1
-            else:
-                finalTail.next_element_address = h2
-                finalTail = h1
-        return finalHead
-
-
-size = int(input("Enter length of linkedlist: "))
-head1 = take_input(size)
+head1 = take_input(6)
 # head2 = take_input(2)
-num = int(input("Enter size in which list to be reversed: "))
-print_element(Solution().reverseKGroup(head1, num))
+num = int(input("Enter num: "))
+print(return_nth_node_from_last(head1, num))
 # 1 2 3 4 5 6
